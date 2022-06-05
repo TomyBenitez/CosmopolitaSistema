@@ -55,15 +55,19 @@
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeCosmopolitaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.MenuHerramientas = new System.Windows.Forms.ToolStrip();
             this.BtnPrincipal = new System.Windows.Forms.ToolStripButton();
             this.BtnAcercaDe = new System.Windows.Forms.ToolStripButton();
+            this.CbModoOscuroClaro = new System.Windows.Forms.ToolStripComboBox();
             this.BtnOpciones = new System.Windows.Forms.ToolStripSplitButton();
             this.mostrarEtiquetasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ocultarEtiquetasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.BtnSalir = new System.Windows.Forms.ToolStripButton();
+            this.StsBarraDeEstado = new System.Windows.Forms.StatusStrip();
+            this.TextoEstado = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
+            this.MenuHerramientas.SuspendLayout();
+            this.StsBarraDeEstado.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -267,19 +271,20 @@
             this.salirToolStripMenuItem1.Text = "Salir";
             this.salirToolStripMenuItem1.Click += new System.EventHandler(this.salirToolStripMenuItem1_Click);
             // 
-            // toolStrip1
+            // MenuHerramientas
             // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuHerramientas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.BtnPrincipal,
             this.BtnAcercaDe,
+            this.CbModoOscuroClaro,
             this.BtnOpciones,
             this.BtnSalir});
-            this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(800, 25);
-            this.toolStrip1.TabIndex = 1;
-            this.toolStrip1.Text = "toolStrip1";
+            this.MenuHerramientas.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MenuHerramientas.Location = new System.Drawing.Point(0, 24);
+            this.MenuHerramientas.Name = "MenuHerramientas";
+            this.MenuHerramientas.Size = new System.Drawing.Size(800, 25);
+            this.MenuHerramientas.TabIndex = 1;
+            this.MenuHerramientas.Text = "toolStrip1";
             // 
             // BtnPrincipal
             // 
@@ -304,6 +309,17 @@
             this.BtnAcercaDe.ToolTipText = "Acerca De";
             this.BtnAcercaDe.Click += new System.EventHandler(this.BtnAcercaDe_Click);
             // 
+            // CbModoOscuroClaro
+            // 
+            this.CbModoOscuroClaro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CbModoOscuroClaro.Items.AddRange(new object[] {
+            "Modo Claro",
+            "Modo Oscuro"});
+            this.CbModoOscuroClaro.Name = "CbModoOscuroClaro";
+            this.CbModoOscuroClaro.Size = new System.Drawing.Size(121, 25);
+            this.CbModoOscuroClaro.ToolTipText = "Modo Oscuro";
+            this.CbModoOscuroClaro.SelectedIndexChanged += new System.EventHandler(this.CbModoOscuroClaro_SelectedIndexChanged);
+            // 
             // BtnOpciones
             // 
             this.BtnOpciones.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -321,14 +337,14 @@
             // mostrarEtiquetasToolStripMenuItem
             // 
             this.mostrarEtiquetasToolStripMenuItem.Name = "mostrarEtiquetasToolStripMenuItem";
-            this.mostrarEtiquetasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mostrarEtiquetasToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.mostrarEtiquetasToolStripMenuItem.Text = "Mostrar Etiquetas";
             this.mostrarEtiquetasToolStripMenuItem.Click += new System.EventHandler(this.mostrarEtiquetasToolStripMenuItem_Click);
             // 
             // ocultarEtiquetasToolStripMenuItem
             // 
             this.ocultarEtiquetasToolStripMenuItem.Name = "ocultarEtiquetasToolStripMenuItem";
-            this.ocultarEtiquetasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ocultarEtiquetasToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.ocultarEtiquetasToolStripMenuItem.Text = "Ocultar Etiquetas";
             this.ocultarEtiquetasToolStripMenuItem.Click += new System.EventHandler(this.ocultarEtiquetasToolStripMenuItem_Click);
             // 
@@ -344,12 +360,29 @@
             this.BtnSalir.ToolTipText = "Salir";
             this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
+            // StsBarraDeEstado
+            // 
+            this.StsBarraDeEstado.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TextoEstado});
+            this.StsBarraDeEstado.Location = new System.Drawing.Point(0, 428);
+            this.StsBarraDeEstado.Name = "StsBarraDeEstado";
+            this.StsBarraDeEstado.Size = new System.Drawing.Size(800, 22);
+            this.StsBarraDeEstado.TabIndex = 2;
+            this.StsBarraDeEstado.Text = "statusStrip1";
+            // 
+            // TextoEstado
+            // 
+            this.TextoEstado.Name = "TextoEstado";
+            this.TextoEstado.Size = new System.Drawing.Size(118, 17);
+            this.TextoEstado.Text = "toolStripStatusLabel1";
+            // 
             // FrmCosmopolita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.StsBarraDeEstado);
+            this.Controls.Add(this.MenuHerramientas);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmCosmopolita";
@@ -357,8 +390,10 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.MenuHerramientas.ResumeLayout(false);
+            this.MenuHerramientas.PerformLayout();
+            this.StsBarraDeEstado.ResumeLayout(false);
+            this.StsBarraDeEstado.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -393,12 +428,15 @@
         private ToolStripMenuItem resumenToolStripMenuItem;
         private ToolStripMenuItem cuotasSocietariasToolStripMenuItem1;
         private ToolStripMenuItem cuotasDeDisciplinasToolStripMenuItem1;
-        private ToolStrip toolStrip1;
+        private ToolStrip MenuHerramientas;
         private ToolStripButton BtnPrincipal;
         private ToolStripButton BtnAcercaDe;
         private ToolStripButton BtnSalir;
         private ToolStripSplitButton BtnOpciones;
         private ToolStripMenuItem mostrarEtiquetasToolStripMenuItem;
         private ToolStripMenuItem ocultarEtiquetasToolStripMenuItem;
+        private ToolStripComboBox CbModoOscuroClaro;
+        private StatusStrip StsBarraDeEstado;
+        private ToolStripStatusLabel TextoEstado;
     }
 }
