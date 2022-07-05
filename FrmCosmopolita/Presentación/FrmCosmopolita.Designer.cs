@@ -72,6 +72,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.principalToolStripMenuItem,
             this.utilidadesToolStripMenuItem,
@@ -98,20 +99,22 @@
             this.listadoToolStripMenuItem,
             this.nuevaDisciplinaToolStripMenuItem});
             this.disciplinasToolStripMenuItem.Name = "disciplinasToolStripMenuItem";
-            this.disciplinasToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
-            this.disciplinasToolStripMenuItem.Text = "Disciplinas";
+            this.disciplinasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.disciplinasToolStripMenuItem.Text = "Actividades";
             // 
             // listadoToolStripMenuItem
             // 
             this.listadoToolStripMenuItem.Name = "listadoToolStripMenuItem";
-            this.listadoToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.listadoToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.listadoToolStripMenuItem.Text = "Listado";
+            this.listadoToolStripMenuItem.Click += new System.EventHandler(this.listadoToolStripMenuItem_Click);
             // 
             // nuevaDisciplinaToolStripMenuItem
             // 
             this.nuevaDisciplinaToolStripMenuItem.Name = "nuevaDisciplinaToolStripMenuItem";
-            this.nuevaDisciplinaToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.nuevaDisciplinaToolStripMenuItem.Text = "Nueva Disciplina";
+            this.nuevaDisciplinaToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.nuevaDisciplinaToolStripMenuItem.Text = "Nueva Actividad";
+            this.nuevaDisciplinaToolStripMenuItem.Click += new System.EventHandler(this.nuevaDisciplinaToolStripMenuItem_Click);
             // 
             // sociosToolStripMenuItem
             // 
@@ -119,20 +122,22 @@
             this.listadoToolStripMenuItem1,
             this.nuevoSocioToolStripMenuItem});
             this.sociosToolStripMenuItem.Name = "sociosToolStripMenuItem";
-            this.sociosToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.sociosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sociosToolStripMenuItem.Text = "Socios";
             // 
             // listadoToolStripMenuItem1
             // 
             this.listadoToolStripMenuItem1.Name = "listadoToolStripMenuItem1";
-            this.listadoToolStripMenuItem1.Size = new System.Drawing.Size(141, 22);
+            this.listadoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.listadoToolStripMenuItem1.Text = "Listado";
+            this.listadoToolStripMenuItem1.Click += new System.EventHandler(this.listadoToolStripMenuItem1_Click);
             // 
             // nuevoSocioToolStripMenuItem
             // 
             this.nuevoSocioToolStripMenuItem.Name = "nuevoSocioToolStripMenuItem";
-            this.nuevoSocioToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.nuevoSocioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nuevoSocioToolStripMenuItem.Text = "Nuevo Socio";
+            this.nuevoSocioToolStripMenuItem.Click += new System.EventHandler(this.nuevoSocioToolStripMenuItem_Click);
             // 
             // cobradoresToolStripMenuItem
             // 
@@ -140,7 +145,7 @@
             this.listadoToolStripMenuItem2,
             this.nuevoCobradorToolStripMenuItem});
             this.cobradoresToolStripMenuItem.Name = "cobradoresToolStripMenuItem";
-            this.cobradoresToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.cobradoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cobradoresToolStripMenuItem.Text = "Cobradores";
             // 
             // listadoToolStripMenuItem2
@@ -148,12 +153,14 @@
             this.listadoToolStripMenuItem2.Name = "listadoToolStripMenuItem2";
             this.listadoToolStripMenuItem2.Size = new System.Drawing.Size(162, 22);
             this.listadoToolStripMenuItem2.Text = "Listado";
+            this.listadoToolStripMenuItem2.Click += new System.EventHandler(this.listadoToolStripMenuItem2_Click);
             // 
             // nuevoCobradorToolStripMenuItem
             // 
             this.nuevoCobradorToolStripMenuItem.Name = "nuevoCobradorToolStripMenuItem";
             this.nuevoCobradorToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.nuevoCobradorToolStripMenuItem.Text = "Nuevo Cobrador";
+            this.nuevoCobradorToolStripMenuItem.Click += new System.EventHandler(this.nuevoCobradorToolStripMenuItem_Click);
             // 
             // utilidadesToolStripMenuItem
             // 
@@ -273,6 +280,7 @@
             // 
             // MenuHerramientas
             // 
+            this.MenuHerramientas.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.MenuHerramientas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.BtnPrincipal,
             this.BtnAcercaDe,
@@ -282,7 +290,7 @@
             this.MenuHerramientas.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.MenuHerramientas.Location = new System.Drawing.Point(0, 24);
             this.MenuHerramientas.Name = "MenuHerramientas";
-            this.MenuHerramientas.Size = new System.Drawing.Size(800, 25);
+            this.MenuHerramientas.Size = new System.Drawing.Size(800, 27);
             this.MenuHerramientas.TabIndex = 1;
             this.MenuHerramientas.Text = "toolStrip1";
             // 
@@ -292,7 +300,7 @@
             this.BtnPrincipal.Image = global::FrmCosmopolita.Properties.Resources.LogoPrincipal;
             this.BtnPrincipal.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnPrincipal.Name = "BtnPrincipal";
-            this.BtnPrincipal.Size = new System.Drawing.Size(23, 22);
+            this.BtnPrincipal.Size = new System.Drawing.Size(24, 24);
             this.BtnPrincipal.Text = "Inicio";
             this.BtnPrincipal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.BtnPrincipal.ToolTipText = "Inicio";
@@ -303,7 +311,7 @@
             this.BtnAcercaDe.Image = global::FrmCosmopolita.Properties.Resources.acerca_de1;
             this.BtnAcercaDe.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnAcercaDe.Name = "BtnAcercaDe";
-            this.BtnAcercaDe.Size = new System.Drawing.Size(23, 22);
+            this.BtnAcercaDe.Size = new System.Drawing.Size(24, 24);
             this.BtnAcercaDe.Text = "Acerca De";
             this.BtnAcercaDe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.BtnAcercaDe.ToolTipText = "Acerca De";
@@ -316,7 +324,7 @@
             "Modo Claro",
             "Modo Oscuro"});
             this.CbModoOscuroClaro.Name = "CbModoOscuroClaro";
-            this.CbModoOscuroClaro.Size = new System.Drawing.Size(121, 25);
+            this.CbModoOscuroClaro.Size = new System.Drawing.Size(121, 27);
             this.CbModoOscuroClaro.ToolTipText = "Modo Oscuro";
             this.CbModoOscuroClaro.SelectedIndexChanged += new System.EventHandler(this.CbModoOscuroClaro_SelectedIndexChanged);
             // 
@@ -329,7 +337,7 @@
             this.BtnOpciones.Image = global::FrmCosmopolita.Properties.Resources.Opciones;
             this.BtnOpciones.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnOpciones.Name = "BtnOpciones";
-            this.BtnOpciones.Size = new System.Drawing.Size(32, 22);
+            this.BtnOpciones.Size = new System.Drawing.Size(36, 24);
             this.BtnOpciones.Text = "Opciones";
             this.BtnOpciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.BtnOpciones.ToolTipText = "Opciones";
@@ -354,7 +362,7 @@
             this.BtnSalir.Image = global::FrmCosmopolita.Properties.Resources.Exit;
             this.BtnSalir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(23, 22);
+            this.BtnSalir.Size = new System.Drawing.Size(24, 24);
             this.BtnSalir.Text = "Salir";
             this.BtnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.BtnSalir.ToolTipText = "Salir";
@@ -362,6 +370,7 @@
             // 
             // StsBarraDeEstado
             // 
+            this.StsBarraDeEstado.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.StsBarraDeEstado.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TextoEstado});
             this.StsBarraDeEstado.Location = new System.Drawing.Point(0, 428);

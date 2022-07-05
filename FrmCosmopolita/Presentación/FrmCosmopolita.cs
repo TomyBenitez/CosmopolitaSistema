@@ -1,3 +1,5 @@
+using FrmCosmopolita.Presentación;
+
 namespace FrmCosmopolita
 {
     public partial class FrmCosmopolita : Form
@@ -96,6 +98,42 @@ namespace FrmCosmopolita
                 utilidadesToolStripMenuItem.BackColor = Color.FromArgb(255, 41, 41, 41);
                 salirToolStripMenuItem.BackColor = Color.FromArgb(255, 41, 41, 41);
             }
+        }
+
+        private void nuevoCobradorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmNuevoEditarCobrador = new FrmNuevoEditarCobrador();
+            frmNuevoEditarCobrador.ShowDialog();
+        }
+
+        private void listadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmListadoActividades = new FrmListadoDeActividades();
+            frmListadoActividades.ShowDialog();
+        }
+
+        private void nuevaDisciplinaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmNuevoEditarActividad = new FrmNuevoEditarActividad();
+            frmNuevoEditarActividad.ShowDialog();
+        }
+
+        private void listadoToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            var frmListadoDeCobradores = new FrmListadoDeCobradores();
+            frmListadoDeCobradores.ShowDialog();
+        }
+
+        private void nuevoSocioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmNuevoEditarSocio = new FrmNuevoEditarSocio();
+            frmNuevoEditarSocio.ShowDialog();
+        }
+
+        private void listadoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            var frmListadoDeSocios = new FrmListadoDeSocios();
+            frmListadoDeSocios.ShowDialog();
         }
     }
 }
